@@ -29,8 +29,7 @@
                 }
             },
             restrict: 'AE',
-            scope: {
-            }
+            scope: {}
         };
         return directive;
 
@@ -41,6 +40,10 @@
     navBarController.$inject = ['$element'];
     /* @ngInject */
     function navBarController($element) {
-
+        var nbc = this;
+        nbc.title = "Welcome to multi-template demo";
+        nbc.openMenu = function ($mdOpenMenu, ev) {
+            $mdMenu.open(ev);
+        }
     }
 })();

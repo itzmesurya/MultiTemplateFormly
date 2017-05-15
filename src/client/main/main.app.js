@@ -4,11 +4,8 @@
     angular.module('main', [
         /* Vendor modules */
         'ngRoute',
-        'ngResource',
         'ngMaterial',
-        'ngSanitize',
         'formly',
-        'ui.bootstrap',
 
         /*Custom modules */
         'demo',

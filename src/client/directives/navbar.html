@@ -1,14 +1,72 @@
-<md-toolbar class="md-hue-2">
-  <div class="md-toolbar-tools">
+<md-toolbar>
+  <!--<div class="md-toolbar-tools">
     <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
       <i class="material-icons">menu</i>
     </md-button>
-    <h2 flex md-truncate>Welcome to multi-template demo</h2>
+    <h2 flex md-truncate>{{nbc.title}}</h2>
     <md-button class="md-fab md-mini set-icon-fab" aria-label="Favorite">
       <i class="material-icons">favorite</i>
     </md-button>
     <md-button class="md-fab md-mini set-icon-fab" aria-label="More">
       <i class="material-icons">more_vert</i>
     </md-button>
+  </div>-->
+  <div>
+    <md-menu-bar>
+      <md-menu>
+        <!--<button ng-click="$mdMenu.open()">
+              File
+            </button>-->
+        <md-button class="md-icon-button" aria-label="Settings" ng-click="$mdMenu.open()">
+          <i class="material-icons">menu</i>
+        </md-button>
+        <md-menu-content>
+          <md-menu-item>
+            <md-button>
+              Share...
+            </md-button>
+          </md-menu-item>
+          <md-menu-divider></md-menu-divider>
+          <md-menu-item>
+            <md-menu>
+              <md-button ng-click="$mdMenu.open()">New</md-button>
+              <md-menu-content>
+                <md-menu-item>
+                  <md-button>Document</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                  <md-button>Spreadsheet</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                  <md-button>Presentation</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                  <md-button>Form</md-button>
+                </md-menu-item>
+                <md-menu-item>
+                  <md-button>Drawing</md-button>
+                </md-menu-item>
+              </md-menu-content>
+            </md-menu>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button ng-click="">
+              Open...
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button disabled="disabled">
+              Rename
+            </md-button>
+          </md-menu-item>
+          <md-menu-divider></md-menu-divider>
+          <md-menu-item>
+            <md-button>
+              Print
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </md-menu-bar>
   </div>
 </md-toolbar>

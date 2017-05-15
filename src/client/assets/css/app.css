@@ -1,7 +1,7 @@
-.material-icons {
+.md-toolbar-tools.material-icons {
     color: white;
 }
 
 .set-icon-fab {
-    font-size: 3.8rem;
+    font-size: 1.8rem;
 }
