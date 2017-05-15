@@ -8,10 +8,7 @@
         'ngMaterial',
         'ngSanitize',
         'formly',
-        'md.chips.select',
-        'ngTable',
         'ui.bootstrap',
-        'trNgGrid',
 
         /*Custom modules */
         'demo',
