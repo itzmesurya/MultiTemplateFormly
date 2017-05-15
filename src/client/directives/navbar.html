@@ -1,29 +1,16 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">angular-material-formly-demo</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#/demo">Demo</a></li>
-        <li><a href="#/vanillaDemo">Vanilla Demo</a></li>
-        <!--<li><a href="#/register">Register</a></li>-->
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<md-toolbar class="md-hue-2">
+  <div class="md-toolbar-tools">
+    <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
+      <!--<md-icon md-svg-icon="./assets/svgs/menu.svg" ></md-icon>-->
+      <i class="material-icons" >menu</i>
+    </md-button>
+    <h2 flex md-truncate>Welcome to multi-template demo</h2>
+    <md-button class="md-fab md-mini set-icon-fab" aria-label="Favorite">
+      <i class="material-icons" >favorite</i>
+      <!--<md-icon md-svg-icon="./assets/svgs/menu.svg" ></md-icon>-->
+    </md-button>
+    <md-button class="md-fab md-mini set-icon-fab" aria-label="More">
+      <i class="material-icons" >more_vert</i>
+    </md-button>
+  </div>
+</md-toolbar>
