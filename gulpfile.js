@@ -35,7 +35,6 @@ gulp.task('serve', ['nodemon-setup'], function () {
     browserSync.init(null, {
         proxy: "http://localhost:5000",
         files: ["src/**/*.*"],
-        browser: "google chrome",
         port: 7000,
     });
 });

@@ -1,72 +1,19 @@
-<md-toolbar>
-  <!--<div class="md-toolbar-tools">
-    <md-button class="md-icon-button" aria-label="Settings" ng-disabled="true">
-      <i class="material-icons">menu</i>
-    </md-button>
-    <h2 flex md-truncate>{{nbc.title}}</h2>
-    <md-button class="md-fab md-mini set-icon-fab" aria-label="Favorite">
-      <i class="material-icons">favorite</i>
-    </md-button>
-    <md-button class="md-fab md-mini set-icon-fab" aria-label="More">
-      <i class="material-icons">more_vert</i>
-    </md-button>
-  </div>-->
+<md-toolbar id="mainToolbar" layout="row" layout-align="start center">
   <div>
-    <md-menu-bar>
-      <md-menu>
-        <!--<button ng-click="$mdMenu.open()">
-              File
-            </button>-->
-        <md-button class="md-icon-button" aria-label="Settings" ng-click="$mdMenu.open()">
-          <i class="material-icons">menu</i>
-        </md-button>
-        <md-menu-content>
-          <md-menu-item>
-            <md-button>
-              Share...
-            </md-button>
+     <md-button class="md-icon-button" aria-label="Settings" ng-click="nbc.showToolbarMenu($event, nbc.settings)">
+        <i class="material-icons">menu</i>
+      </md-button>
+    <!--<md-menu md-offset="10 75">
+      <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdMenu.open($event)">
+        <i class="material-icons">menu</i>
+      </md-button>
+      <md-menu-content>
+        <div layout="column">
+          <md-menu-item ng-repeat="item in [1, 2, 3]">
+            <md-button> <span md-menu-align-target="">Option</span> {{item}} </md-button>
           </md-menu-item>
-          <md-menu-divider></md-menu-divider>
-          <md-menu-item>
-            <md-menu>
-              <md-button ng-click="$mdMenu.open()">New</md-button>
-              <md-menu-content>
-                <md-menu-item>
-                  <md-button>Document</md-button>
-                </md-menu-item>
-                <md-menu-item>
-                  <md-button>Spreadsheet</md-button>
-                </md-menu-item>
-                <md-menu-item>
-                  <md-button>Presentation</md-button>
-                </md-menu-item>
-                <md-menu-item>
-                  <md-button>Form</md-button>
-                </md-menu-item>
-                <md-menu-item>
-                  <md-button>Drawing</md-button>
-                </md-menu-item>
-              </md-menu-content>
-            </md-menu>
-          </md-menu-item>
-          <md-menu-item>
-            <md-button ng-click="">
-              Open...
-            </md-button>
-          </md-menu-item>
-          <md-menu-item>
-            <md-button disabled="disabled">
-              Rename
-            </md-button>
-          </md-menu-item>
-          <md-menu-divider></md-menu-divider>
-          <md-menu-item>
-            <md-button>
-              Print
-            </md-button>
-          </md-menu-item>
-        </md-menu-content>
-      </md-menu>
-    </md-menu-bar>
+        </div>
+      </md-menu-content>
+    </md-menu>-->
   </div>
 </md-toolbar>
