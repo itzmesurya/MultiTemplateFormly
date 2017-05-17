@@ -5,6 +5,8 @@ var app = express();
 // route to client folder as a static resource
 app.use(express.static('src/client'));
 
+app.use(express.static('src/themes'));
+
 app.get('/', function (req, res) {
     res.sendfile('./src/client/main/index.html');
 });

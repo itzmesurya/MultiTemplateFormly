@@ -1,0 +1,21 @@
+{
+  "name": "material",
+  "homepage": "https://github.com/itzmesurya/MultiTemplateFormly",
+  "authors": [
+    "Surya <itzmesurya@gmail.com>"
+  ],
+  "description": "angular material theme templates to be use in ep.formly",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.4"
+  }
+}

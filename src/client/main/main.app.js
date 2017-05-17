@@ -9,12 +9,13 @@
 
         /*Custom modules */
         'demo',
-        'directives'
+        'directives',
+        'ep.formly.themes'
     ]);
 
     var mainApp = angular.module('main');
 
-    mainApp.config(function ($routeProvider) {
+    mainApp.config(function ($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
             templateUrl: 'demo/demo.html',
             controller: 'demoController as dc'
@@ -23,10 +24,7 @@
             templateUrl: 'demo/demo.html',
             controller: 'demoController as dc'
         });
+
+        $locationProvider.html5Mode(true);
     });
-
-    mainApp.config(function (formlyConfigProvider) {
-
-    });
-
 })();
