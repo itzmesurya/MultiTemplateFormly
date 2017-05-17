@@ -1,5 +1,5 @@
 (function() {
     'use strict';
 
-    angular.module('ep.formly.themes.core', ['ngMaterial','ngMessages','ui-mask']);
+    angular.module('ep.formly.themes.core', ['ngMaterial','ngMessages','ui.mask']);
 })();

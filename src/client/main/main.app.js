@@ -17,8 +17,8 @@
 
     mainApp.config(function ($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
-            templateUrl: 'demo/demo.html',
-            controller: 'demoController as dc'
+            templateUrl: 'demo/ep-text/ep-text-demo.html',
+            controller: 'epTextDemoController as dc'
         });
         $routeProvider.when('/demo', {
             templateUrl: 'demo/demo.html',

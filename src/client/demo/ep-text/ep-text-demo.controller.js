@@ -3,12 +3,12 @@
 
     angular
         .module('demo')
-        .controller('demoController', demoController);
+        .controller('epTextDemoController', epTextDemoController);
 
-    demoController.$inject = ['$scope', '$log', '$q', '$timeout', '$sce', '$compile', '$mdDialog'];
+    epTextDemoController.$inject = ['$scope', '$log', '$q', '$timeout', '$sce', '$compile', '$mdDialog'];
 
-    function demoController($scope, $log, $q, $timeout, $sce, $compile, $mdDialog) {
-        $scope.name = 'demoController';
+    function epTextDemoController($scope, $log, $q, $timeout, $sce, $compile, $mdDialog) {
+        $scope.name = 'epTextDemoController';
         //alert('Demo controller has been loaded!');
         var dc = this;
         dc.name = 'Surya';
