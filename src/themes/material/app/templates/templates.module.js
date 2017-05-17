@@ -19,7 +19,6 @@
             name: 'ep-text',
             templateUrl: 'material/app/templates/ep-text/ep-text-template.html',
             controller: ['$scope', function ($scope) {
-                var control = $scope.fc;
             }],
             defaultOptions: {
                 templateOptions: {
